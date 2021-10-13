@@ -4,7 +4,7 @@
                         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
 
 
-    <changeSet id="1.0.0" author="eugene.suleimanov">
+    <changeSet id="1.0.0" author="tudor.turcanu">
         <createTable tableName="users">
             <column name="id" type="BIGINT" autoIncrement="true">
                 <constraints primaryKey="true" nullable="false"/>
@@ -45,7 +45,7 @@
         </createTable>
     </changeSet>
 
-    <changeSet id="1.0.1" author="eugene.suleimanov">
+    <changeSet id="1.0.1" author="tudor.turcanu">
         <createTable tableName="roles">
             <column name="id" type="BIGINT" autoIncrement="true">
                 <constraints primaryKey="true" nullable="false"/>
@@ -69,7 +69,7 @@
         </createTable>
     </changeSet>
 
-    <changeSet id="1.0.2" author="eugene.suleimanov">
+    <changeSet id="1.0.2" author="tudor.turcanu">
         <createTable tableName="user_roles">
             <column name="user_id" type="BIGINT">
             </column>
@@ -79,7 +79,7 @@
         </createTable>
     </changeSet>
 
-    <changeSet id="1.0.3" author="eugene.suleimanov">
+    <changeSet id="1.0.3" author="tudor.turcanu">
         <addForeignKeyConstraint baseColumnNames="user_id"
                                  baseTableName="user_roles"
                                  constraintName="fk_user_roles_user"
@@ -89,7 +89,7 @@
                                  referencedTableName="users"/>
     </changeSet>
 
-    <changeSet id="1.0.4" author="eugene.suleimanov">
+    <changeSet id="1.0.4" author="tudor.turcanu">
         <addForeignKeyConstraint baseColumnNames="role_id"
                                  baseTableName="user_roles"
                                  constraintName="fk_user_roles_roles"
@@ -99,7 +99,7 @@
                                  referencedTableName="roles"/>
     </changeSet>
 
-    <changeSet id="1.0.5" author="eugene.suleimanov">
+    <changeSet id="1.0.5" author="tudor.turcanu">
         <insert tableName="roles">
             <column name="name" value="ROLE_USER"/>
         </insert>
