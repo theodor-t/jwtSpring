@@ -15,6 +15,8 @@
 	<description>Jwt app Spring</description>
 	<properties>
 		<java.version>1.8</java.version>
+		<mysql.connector.version>8.0.15</mysql.connector.version>
+		<jsonwebtoken.version>0.8.0</jsonwebtoken.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -36,12 +38,12 @@
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
-			<version>8.0.15</version>
+			<version>${mysql.connector.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>io.jsonwebtoken</groupId>
 			<artifactId>jjwt</artifactId>
-			<version>0.8.0</version>
+			<version>${jsonwebtoken.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.projectlombok</groupId>
