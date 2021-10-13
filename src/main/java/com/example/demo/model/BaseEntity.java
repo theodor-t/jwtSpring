@@ -11,4 +11,5 @@ public class BaseEntity {
     private long id;
     private Date created;
     private Date updated;
+    private Status status;
 }
