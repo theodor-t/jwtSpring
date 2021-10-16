@@ -2,8 +2,8 @@ package com.example.demo.security.jwt;
 
 import com.example.demo.model.Role;
 import io.jsonwebtoken.*;
-import lombok.Value;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
